@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:dio/dio.dart';
-import 'package:dio_logger/dio_logger.dart';
+// import 'package:dio_logger/dio_logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final dio = Dio();
@@ -30,7 +30,7 @@ class Service {
       await prefs.setString('access_token', response.data['access_token']);
       // ignore: use_build_context_synchronously
       GoRouter.of(context).go('/home');
-      print(response);
+      // print(response);
     }
     return response;
   }

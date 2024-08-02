@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
         datas = profile;
       });
     } catch (e) {
-      print(e);
+      // print(e);
     }
   }
 
@@ -118,7 +118,25 @@ class _HomePageState extends State<HomePage> {
                         onPressed: () {},
                         label: const Text('Keluar')))
               ]),
-              const Expanded(child: MenuHome())
+              Center(
+                  child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.red,
+                ),
+                child: const SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text('Menu '),
+                          Text('Menu '),
+                          Text('Menu '),
+                        ])),
+              ))
+              // const MenuHome()
             ],
           ),
         )

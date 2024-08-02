@@ -45,9 +45,9 @@ class _MenuHomeState extends State<MenuHome> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text('Menu '),
-                Text('Menu '),
-                Text('Menu '),
+                // Text('Menu '),
+                // Text('Menu '),
+                // Text('Menu '),
               ])),
     )));
   }
